@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>from</title>
+        <link rel="icon" type="image/png" href="icon.png">
+    </head>
+    <body>
+        <!--GET ---INSENSETIVE DATA and POST--for sensetive dATA methods enctype="multipart/form-data" for large file uploads-->
+        <form action="index.php" method="POST" enctype="multipart/form-data" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" required minlength="3" maxlength="30" placeholder="Rahat">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="rahat@gmail.com">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required minlength="6" maxlength="100" placeholder="Enter your password">
+            <br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required minlength="10" maxlength="15" placeholder="+88012345-67891" pattern="[0-9]{6}-[0-9]{5}">
+            <br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" required>
+            <br><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required min="1" max="100" value="1">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="religion0">Religion:</label>
+            <label for="islam">Islam</label>
+            <input type="radio" id="islam" name="religion" value="islam" required>
+            <label for="christianity">Christianity</label>
+            <input type="radio" id="christianity" name="religion" value="christianity">
+            <label for="hinduism">Hinduism</label>
+            <input type="radio" id="hinduism" name="religion" value="hinduism">
+            <br><br>
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <br><br>
+            <label for="idea">Idea:</label>
+            <textarea id="idea" name="idea" placeholder="Share your idea..." rows="5" cols="100" ></textarea>
+            <br><br>
+            <label for="files">Upload Files:</label>
+            <input type="file" id="files" name="files" multiple accept="image/png , image/jpeg">
+            <br><br>
+
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </body>
+</html>

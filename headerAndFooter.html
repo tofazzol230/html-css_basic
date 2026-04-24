@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>headerAndFooter</title>
+        <link rel="icon" type="image/png" href="icon.png">
+    </head>
+    <body>
+        <header style="background-color: aqua;">
+            <h1>Welcome to the website</h1>
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Products</a>
+            <a href="">Contact</a>
+            <hr>
+        </header>
+
+        <main style="text-align: center;">
+            <h4>Check out this cool moves</h4>
+            <image src="img\image.jpg" alt="Key picture">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ullam sapiente repellat maiores vel ad nihil, error voluptatibus, aut dolore autem consequatur. Fuga odit, molestias mollitia ratione laboriosam dignissimos quia.</p>
+        </main>
+        
+        <footer style="background-color: aqua;text-align: center;padding: 10px;">
+            <hr>
+            <address>
+                Author: Raha7<br>
+                <a href="mailto:tofazzol230@gmail.com">tofazzol230@gmail.com</a>
+            </address>
+            <p>&copy; <span id="year"></span> All rights reserved</p>
+        </footer>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
