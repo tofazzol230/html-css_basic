@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    border: 10px solid #000;
+    height: 90vh;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* align-content: flex-start; */
+    /*column-gap: 10px;*/
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#box1{
+    background-color: hsl(180, 100%, 50%);
+}
+#box2{
+    background-color: hsl(120, 100%, 50%);
+}
+#box3{
+    background-color: hsl(271, 76%, 53%);
+}
+#box4{
+    background-color: hsl(0, 100%, 50%);
+}

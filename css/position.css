@@ -1,0 +1,46 @@
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    /*er pore nicher property gola use kore box ta k jekono jaigai set korte parbo  relativ to its normal posistion*/
+    top: 100px;
+    left:100px;
+}
+
+#box2{
+    width: auto;
+    height: auto;
+    background-color: lightcoral;
+    text-align: center;
+    position: fixed;
+    /*ei box ta always fixed position e thake er niche baki text ta pore jabe..eita addvatisement er jonno use kora jete pare */
+    bottom: 30px;
+    left:30px;
+}
+
+#box3{
+    width: 100px;
+    height: 100px;
+    background-color: midnightblue;
+    position: absolute;
+    /*ei box ta eiter nearest ancestor(box1) er relative position e thake */
+    top: 0;
+    left: 0;
+}
+
+#box4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(3, 3, 3);
+    position: sticky;
+    /*ei box ta scroll position er based e thake ,reseserverd space for its original position */
+    top:0px;
+}
+/*static position for future use ..will be used when we want to keep the default position of an element */
+#box5{
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    position: static;
+}

@@ -1,0 +1,14 @@
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    box-shadow: 10px 10px 5px;
+    margin: auto;
+}
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(159, 57, 188);
+    box-shadow: 10px 10px 5px;
+    margin-top: 5%;
+}

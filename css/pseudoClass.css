@@ -1,0 +1,84 @@
+a:link{/*here link is a pseudo-class by this we can style unvisited links */
+    color: rgb(4, 250, 69);
+}
+
+
+/*a:link → a:visited → a:hover → a:active*/
+
+
+a:visited{/*here visited is a pseudo-class that applies to already visited links */
+    color: sandybrown;
+    font-size: 0.8em;
+}
+a:hover{/*here hover is a pseudo-class that applies when the user hovers over the link */
+    color: brown;
+    font-size: 1.2em;
+}
+a:active{/*here active is a pseudo-class that applies when the user clicks on the link */
+    color: fuchsia;
+    font-size: 1.3em;
+}
+
+li:hover{/*when the user hovers over a list item it will change background color */
+    background-color: blueviolet;
+}
+li:not(:hover) {/*any list item that is not being hovered over is colored khaki */
+    background-color: khaki;
+}
+li:nth-child(odd) {/*any list item that is an odd child is colored lightgray */
+    background-color: lightgray;
+}
+li:nth-child(n+3) {/*any list item that is the third or later child is colored lightblue */
+    background-color: lightblue;
+}
+
+#greeting p{
+    background-color: aquamarine;
+    padding: 10px;
+    display: none;/*initially hidden */
+}
+
+#greeting:hover p{/*when the user hovers over the greeting div, the paragraph inside will be displayed */
+    display: block;
+}
+
+/*
+pesudo element == keyword add after a selector thats used to style a specific part of an element
+
+selector::pesudo-element
+
+*/
+
+h1::first-letter{/*that will style the first letter of the h1 element */
+    font-size: 200%;
+    font-style: italic;
+}
+p::first-line{/*that will style the first line of the p element */
+    background-color: blueviolet;
+}
+p::selection{/**?anything that is selected */
+    color: brown;
+    background-color: aqua;
+}
+#fruit-list li::before{/*that will add content before each list item */
+    content: "😁 ";
+    color: blue;
+}
+#apple::after{
+    content: " (favorite)";
+    color: red;
+}
+#grape::after{
+    content: " (most favorite)";
+    color: red;
+}
+#watermelon::after{
+    content: " (least favorite)";
+    color: red;
+}
+
+#fruit-list li::marker{/*this will style the marker of each list item */
+    content: "@";
+    color: brown;
+    font-size: 200%;
+}

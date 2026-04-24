@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>combinator</title>
+        <link rel="icon" type="image/png" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="combinator.css">
+        <link rel="stylesheet" type="text/css" href="pagination.css">
+    </head>
+    <body>
+        <!--
+        CSS Combinators – Full Explanation
+
+        1. Descendant selector (space)
+        Syntax: A B
+        Meaning: Selects all elements B that are inside A, at any depth.
+        Example:
+            div p → selects all <p> inside <div>, even nested deeper.
+
+        2. Child selector (>)
+        Syntax: A > B
+        Meaning: Selects only direct children B of A.
+        Example:
+            div > p → selects <p> directly inside <div>, but not deeper.
+
+        3. General sibling selector (~)
+        Syntax: A ~ B
+        Meaning: Selects all siblings B that come after A, sharing the same parent.
+        Example:
+            h1 ~ p → selects all <p> after <h1> in the same parent.
+
+        4. Adjacent sibling selector (+)
+        Syntax: A + B
+        Meaning: Selects the immediate next sibling B after A.
+        Example:
+            h1 + p → selects the first <p> immediately after <h1>.
+
+        Notes:
+        - Combinators define relationships between selectors.
+        - They allow precise targeting without extra classes or IDs.
+        -->
+        <div id="container">
+            <p>This is a paragraph 1</p>
+            <p>This is a paragraph 2</p>
+            <div>
+                <p>This is a paragraph 3</p>
+            </div>
+        </div>
+        <p>This is a paragraph 4</p>
+        <p>This is a paragraph 5</p>
+
+
+        <!--for pagination.html-->
+    <div class="pagination">
+            <a href="pseuudo.html"><</a>
+            <a href="pagination.html">1</a>
+            <a href="position.html">2</a>
+            <a href="pseuudo.html">3</a>
+            <a href="combinator.html" class="active">4</a>
+            <a href="combinator.html">></a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(159, 57, 188);
+    
+    margin-right: 2%;
+    /* overflow property examples */
+  /* overflow: visible;   Content spills outside */
+  /* overflow: hidden;    Extra content clipped */
+  /* overflow: auto;    Always show scrollbars */
+    overflow: scroll; 
+    display: inline;/*no effect on floated elements */
+    /*float: left;*/
+    /*display:inline-block;
+    display:none; use korle kono space e nibe na..kono rext e thakbe na div/span kono kiso e use hobe na*//*inline-block- height and width use kora jabe but inline propeerty o thakbe mean akee line e block and other text thakbe*/
+    visibility: hidden;/*block /span ta hide hoia jabe...but space o thake*/
+}
+
+#span{
+    background:yellow;
+    width: 200px;
+    height: 200px;
+    display: block;/*display:block korle width and height property kaj korbe*/
+}
+
+body{
+    margin: 5%;
+    display: flow-root;
+}
+p{
+    border-bottom: 3px solid goldenrod;
+    border-top: 3px solid green;
+    border-left: 3px solid black;
+    border-right: 3px solid hotpink;
+    border-radius: 1%;
+}

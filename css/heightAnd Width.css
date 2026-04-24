@@ -1,0 +1,51 @@
+.box{
+    border: 2px solid; 
+    width: 200px;
+    height: auto;
+    float: left;
+    padding: 25px;
+    box-sizing: border-box;
+}
+/*min-height and max-height*/
+/*
+===========================================
+BOX-SIZING EXPLANATION
+===========================================
+
+By default, CSS uses "content-box" for box-sizing.
+That means:
+    - width/height apply only to the content area.
+    - padding and border are added on top of that size.
+    - So the final element is bigger than the width/height you set.
+
+If you use "border-box":
+    - width/height include content + padding + border.
+    - The total size of the element stays exactly what you set.
+    - Much easier to control layouts, especially with padding.
+
+Developers often set * { box-sizing: border-box; } globally
+to make all elements predictable.
+*/
+
+/* Example with content-box (default) */
+.box1 {
+    width: 200px;          /* Content area is 200px wide */
+    padding: 20px;         /* Adds 20px on left + right */
+    border: 5px solid;     /* Adds 5px on left + right */
+    box-sizing: content-box; /* Total width = 200 + 20 + 20 + 5 + 5 = 250px */
+    background-color: lightblue;
+}
+
+/* Example with border-box */
+.box2 {
+    width: 200px;          /* Total box is 200px wide */
+    padding: 20px;         /* Padding is included inside the 200px */
+    border: 5px solid;     /* Border is also included inside the 200px */
+    box-sizing: border-box; /* Total width = 200px exactly */
+    background-color: lightgreen;
+}
+
+/* Best practice: apply border-box globally */
+* {
+    box-sizing: border-box;
+}

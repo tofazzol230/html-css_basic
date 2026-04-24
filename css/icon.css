@@ -1,0 +1,22 @@
+.icon{
+    text-align: center;
+}
+.fa-duotone.fa-solid.fa-house.fa-5x{
+    color: #716a6a;
+}
+.fa-brands.fa-facebook.fa-5x{
+    color: #088bf7;
+}
+.fa-brands.fa-instagram.fa-5x{
+    color: #ef6767;
+}
+.fa-brands.fa-facebook.fa-5x:hover{
+    color: #0965b1;
+}
+.fa-brands.fa-instagram.fa-5x:hover{
+    color: #ef3e3e;
+}
+.icon a{
+    text-align: none;
+    margin: 20px;
+}

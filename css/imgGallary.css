@@ -1,0 +1,22 @@
+.gallery{
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #7c7676;
+    width: 200px;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 2px solid #000;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 786px){
+    .gallery{
+        width: 100%;
+    }
+}

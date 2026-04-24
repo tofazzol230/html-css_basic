@@ -1,0 +1,16 @@
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: lightblue;
+    animation: moveBox 2s infinite alternate;
+    
+}
+
+@keyframes moveBox {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}

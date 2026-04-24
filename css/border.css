@@ -1,0 +1,15 @@
+h1{
+    /*border-style: outset;
+    border-width: 3px;
+    border-color: cadetblue;
+    border-radius: 40%;*/
+    border: 3px outset green;
+    text-align: center;
+}
+p{
+    border-bottom: 3px solid goldenrod;
+    border-top: 3px solid green;
+    border-left: 3px solid black;
+    border-right: 3px solid hotpink;
+    border-radius: 10%;
+}

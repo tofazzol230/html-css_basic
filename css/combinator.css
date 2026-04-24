@@ -1,0 +1,29 @@
+#container{
+    border:2px solid black;
+}
+/*descendant selector*/
+#container p{
+    background-color: lightgray;
+}
+
+
+
+/*child selector*/
+#container > p{
+    background-color:yellow;
+}
+
+
+
+
+/*general sibling selector*/
+
+#container ~ p{
+    background-color: rgb(55, 3, 158);
+}
+
+
+/*adjacent sibling selector*/
+#container + p{
+    background-color: brown;
+}

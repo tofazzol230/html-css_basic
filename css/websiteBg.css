@@ -1,0 +1,17 @@
+body{
+    background-image: url(img/bg.jpg);/*img ta small hoile..same img ta e by defult 2 -3 ber use hoie full hoia jabe ...like this small is too smmall for website
+    bg
+    */
+    background-repeat: no-repeat ;/*img small hoile o repeat korbe na*/
+    background-position: center;
+    background-attachment: fixed;/*img ta relative position e thakbe*/
+    background-size: cover;/*small img ta kei full cscreen e dekhabe*/
+}
+h1{
+    color:azure;
+}
+p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
